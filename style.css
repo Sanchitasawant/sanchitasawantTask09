@@ -12,20 +12,15 @@ body {
 /* Navbar */
 
 .navbar {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 50px;
-    background-color: white;
 }
 
 .logo img {
     width: 90px;
 }
-
-
-/* Navigation menu */
 
 .menu {
     display: flex;
@@ -42,40 +37,28 @@ body {
     color: #0099ff;
 }
 
-
-/* Username */
-
 .username span {
     background-color: #eaf4ff;
     color: #4aa3ff;
     padding: 10px 15px;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 
-/* Hero section */
+/* Hero */
 
 .hero {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 80px);
     padding: 40px 70px;
     gap: 40px;
 }
-
-
-/* Both sections get equal width */
 
 .left,
 .right {
     width: 50%;
 }
-
-
-/* Left section */
 
 .left h1 {
     font-size: 50px;
@@ -91,42 +74,32 @@ body {
 .left p {
     width: 80%;
     font-size: 18px;
-    color: #777;
     line-height: 1.6;
+    color: #777;
+
     margin-bottom: 30px;
 }
 
 
-/* Book service button */
+/* Button */
 
 .left button {
     background-color: #0099ff;
     color: white;
     border: none;
-    padding: 18px 35px;
-    border-radius: 12px;
-    font-size: 18px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 17px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
-
-
-/*
-   Hover experiment:
-
-   scale(1.05) makes the button slightly bigger.
-
-   rotate(-3deg) tilts the button slightly.
-
-   Both transforms are used together.
-*/
 
 .left button:hover {
     transform: scale(1.05) rotate(-3deg);
 }
 
 
-/* Right section */
+/* Image */
 
 .right {
     display: flex;
@@ -134,21 +107,17 @@ body {
 }
 
 .right img {
-    width: 500px;
+    width: 450px;
     max-width: 100%;
 }
 
 
-/* Tablet screen */
+/* Tablet */
 
 @media screen and (max-width: 768px) {
 
     .navbar {
         padding: 15px 25px;
-    }
-
-    .logo img {
-        width: 70px;
     }
 
     .menu {
@@ -157,11 +126,6 @@ body {
 
     .menu a {
         font-size: 15px;
-    }
-
-    .username span {
-        font-size: 14px;
-        padding: 8px 12px;
     }
 
     .hero {
@@ -178,18 +142,13 @@ body {
         font-size: 16px;
     }
 
-    .left button {
-        font-size: 15px;
-        padding: 12px 24px;
-    }
-
     .right img {
         width: 280px;
     }
 }
 
 
-/* Mobile screen */
+/* Mobile */
 
 @media screen and (max-width: 480px) {
 
@@ -197,31 +156,23 @@ body {
         padding: 15px;
     }
 
-    .menu {
-        display: none;
-    }
-
     .logo img {
         width: 60px;
     }
 
-    .username span {
-        font-size: 11px;
-        padding: 6px 10px;
+    .menu {
+        display: none;
     }
 
-    /*
-       On a small screen, putting text and image
-       side by side makes them too narrow.
-
-       So they are placed one below another.
-    */
+    .username span {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
 
     .hero {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        gap: 25px;
+
+        padding: 25px 20px;
     }
 
     .left,
@@ -238,16 +189,7 @@ body {
         font-size: 15px;
     }
 
-    .left button {
-        font-size: 14px;
-        padding: 12px 20px;
-    }
-
-    .right {
-        justify-content: center;
-    }
-
     .right img {
-        width: 220px;
+        width: 250px;
     }
 }
